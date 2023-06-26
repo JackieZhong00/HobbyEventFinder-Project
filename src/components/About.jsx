@@ -13,7 +13,7 @@ const About = () => {
         </p>
         <p>Please do not delete events that are not posted by you</p>
         <p>Use search bar to filter for event/hobby names -- Refresh to clear filter</p>
-        <p>For any questions: please email me at jackiery.zhong@gmail.com</p>
+        <p>Have fun meeting new people and going on new adventures!</p>
     </div>
   )
 }
