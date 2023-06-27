@@ -39,7 +39,7 @@ const MarkerModal = () => {
         <li>description: {markerHobby.description}</li>
         <li>duration: {markerHobby.duration}</li>
         <li>date:{new Date(markerHobby.date).toString()}</li>
-        <li>friendsOnly: {markerHobby.friendsOnly}</li>
+        {/* <li>friendsOnly: {markerHobby.friendsOnly}</li> */}
         <li>{markerHobby._id}</li>
         {/* <Link onClick={() => deleteHobby(hobby._id)}>Delete</Link>
         <Link to={'/edit/' + hobby._id}>Edit</Link> */}

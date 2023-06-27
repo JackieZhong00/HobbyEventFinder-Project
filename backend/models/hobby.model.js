@@ -15,10 +15,10 @@ const hobbySchema = new Schema(
       type: String,
       required: true,
     },
-    friendsOnly: {
-      type: String,
-      required: false,
-    },
+    // friendsOnly: {
+    //   type: String,
+    //   required: false,
+    // },
     duration: {
       type: Number,
       required: true,

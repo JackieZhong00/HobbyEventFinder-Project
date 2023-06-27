@@ -8,7 +8,7 @@ const Edithobby = () => {
     userName: '',
     hobby: '',
     description: '',
-    friendsOnly: false,
+    // friendsOnly: false,
     duration: 0,
     date: new Date(),
     lat: 0,
@@ -31,11 +31,11 @@ const Edithobby = () => {
     setHobby({ ...theHobby, description: newDescription })
   }
 
-  const changeFriendsOnly = (e) => {
-    console.log(e.target.checked)
-    const checked = e.target.checked
-    setHobby((prevHobby) => ({ ...prevHobby, friendsOnly: checked }))
-  }
+  // const changeFriendsOnly = (e) => {
+  //   console.log(e.target.checked)
+  //   const checked = e.target.checked
+  //   setHobby((prevHobby) => ({ ...prevHobby, friendsOnly: checked }))
+  // }
 
   const changeDuration = (e) => {
     const newDuration = e.target.value
@@ -72,7 +72,7 @@ const Edithobby = () => {
     const username = formData.get('username') // these values correspond to the name attribute of input elements of the form
     const hobby = formData.get('hobby')
     const description = formData.get('description')
-    const friendsOnly = formData.get('friendsOnly')
+    // const friendsOnly = formData.get('friendsOnly')
     const duration = formData.get('duration')
     const date = Date.parse(formData.get('date'))
     const lat = theHobby.lat
@@ -81,7 +81,7 @@ const Edithobby = () => {
       username,
       hobby,
       description,
-      friendsOnly,
+      // friendsOnly,
       duration,
       date,
       lat,
@@ -137,7 +137,7 @@ const Edithobby = () => {
             onChange={changeDescription}
             value={theHobby.description}
           />
-          <div>
+          {/* <div>
             <label htmlFor="friendsOnly">Friends Only?</label>
             <input
               type="checkbox"
@@ -148,7 +148,7 @@ const Edithobby = () => {
               value={theHobby.friendsOnly===true?'true':'true'}
             />
             <input type='hidden' name='friendsOnly'value='false'/>
-          </div>
+          </div> */}
           <div>
             <label htmlFor="duration">Duration in minutes</label>
             <input

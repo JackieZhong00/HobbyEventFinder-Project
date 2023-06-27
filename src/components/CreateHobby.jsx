@@ -8,7 +8,7 @@ const Createhobby = ({ id }) => {
     userName: '',
     hobby: '',
     description: '',
-    friendsOnly: false,
+    // friendsOnly: false,
     duration: 0,
     date: new Date(),
     lat: id.lat,
@@ -27,10 +27,10 @@ const Createhobby = ({ id }) => {
     setHobby({ ...hobby, description: newDescription })
   }
 
-  const changeFriendsOnly = (e) => {
-    const checked = e.target.checked
-    setHobby({ ...hobby, friendsOnly: checked })
-  }
+  // const changeFriendsOnly = (e) => {
+  //   const checked = e.target.checked
+  //   setHobby({ ...hobby, friendsOnly: checked })
+  // }
 
   const changeDuration = (newDuration) => {
     setHobby({ ...hobby, duration: newDuration })
@@ -46,7 +46,7 @@ const Createhobby = ({ id }) => {
     const username = formData.get('username') // these values correspond to the name attribute of input elements of the form
     const hobby = formData.get('hobby')
     const description = formData.get('description')
-    const friendsOnly = formData.get('friendsOnly')
+    // const friendsOnly = formData.get('friendsOnly')
     const duration = formData.get('duration')
     const date = formData.get('date')
     const lat = id.lat
@@ -56,7 +56,7 @@ const Createhobby = ({ id }) => {
       username,
       hobby,
       description,
-      friendsOnly,
+      // friendsOnly,
       duration,
       date,
       lat,
@@ -73,7 +73,7 @@ const Createhobby = ({ id }) => {
       username: '',
       hobby: '',
       description: '',
-      friendsOnly: false,
+      // friendsOnly: false,
       duration: 0,
       date: new Date(),
       lat: 0,
@@ -141,7 +141,7 @@ const Createhobby = ({ id }) => {
             Duration in minutes
           </label>
         </div>
-        <div className="btn-group">
+        {/* <div className="btn-group">
           <input
             type="checkbox"
             id="friendsOnly"
@@ -154,7 +154,7 @@ const Createhobby = ({ id }) => {
           <label htmlFor="friendsOnly" className="btn btn-outline-primary">
             Friends Only?
           </label>
-        </div>
+        </div> */}
         <div>
           <label htmlFor="date" className="form-label">
             Date

@@ -46,6 +46,8 @@ const Hobbylist = () => {
   return (
       <div>
         <h3>Post Your Activity/Hobby</h3>
+        <p>Click anywhere on the map to mark approximate location of event</p>
+        <p>Fill out + submit form after placing marker to post your event onto the map</p>
 
         <ul>
           {/* {hobbyList.map((hobby) => {

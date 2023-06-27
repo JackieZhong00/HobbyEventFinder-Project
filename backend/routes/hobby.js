@@ -11,7 +11,7 @@ router.route('/add').post((req, res) => {
   const username = req.body.username
   const hobby = req.body.hobby
   const description = req.body.description
-  const friendsOnly = req.body.friendsOnly
+  // const friendsOnly = req.body.friendsOnly
   const duration = Number(req.body.duration)
   const date = Date.parse(req.body.date)
   const lat = req.body.lat
@@ -21,7 +21,7 @@ router.route('/add').post((req, res) => {
     username,
     hobby,
     description,
-    friendsOnly,
+    // friendsOnly,
     duration,
     date,
     lat,
